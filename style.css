@@ -1,0 +1,36 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    width: 75%;
+    height: 75%;
+    background-color: blueviolet;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left:50%;
+}
+.title-bar{
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 5%;
+    margin-inline: 20px;
+    padding: 10px;
+    background-color: aqua;
+
+}
+.task-data{
+    background-color: aqua;
+    height: 70%;
+    margin-top: 20px ;
+    margin-inline: 20px;    
+}
+.task{
+    border: 1px solid black;
+}
