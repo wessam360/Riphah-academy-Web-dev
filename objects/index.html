@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <from>
+        <label for=".mail">EMAIL</label>
+         <input id="mail" type="email">
+         <br>
+         <label for=".pass">PASSWORD</label>
+         <input id="pass" type="password">
+         <br>
+         <label for=".un">USERNAME</label>
+         <input id="un" type="text">
+         <br>
+        <input id="sub" type="submit">
+    </from>
+
+    <script>
+//         let car  = {
+//             doors : 4 ,
+//             color : `red`,
+//             modal : 2022,
+//             name: `swift`,
+// run : ()=>{
+//     console.log(this);
+// },
+// seats : {
+// color: `white`,
+// number : 2
+// }
+//         }
+        // console.log(car);
+        // console.log(car.name); 
+// console.log(car["name"]);
+// console.log(car.run());
+// console.log(car.seats.color);
+let mail_address;
+let username ;
+let password ;
+let sub;
+let obj;
+
+function rerun (){
+ mail_address = document.getElementById("mail");
+ username = document.getElementById("un");
+ password = document.getElementById("pass");
+ sub= document.getElementById("sub");
+ obj  = {};
+}
+rerun();
+sub.addEventListener("click",()=>{
+    mail_address = mail_address.value;
+username = username.value ;
+password = password.value ;
+
+obj.mail =  mail_address;
+obj.name = username;
+obj.pass = password;
+console.log(obj);
+rerun();
+} )
+
+    </script>
+</body>
+</html>
